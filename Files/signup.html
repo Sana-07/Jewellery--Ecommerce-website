@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../Css/signup.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-5 py-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Signup</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="signupForm">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please enter a valid username.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Password must be at least 8 characters, including
+                                    uppercase, lowercase, and numbers.</div>
+                            </div>
+                            <button type="button" class="btn btn-outline-success" onclick="validateSignup()">Signup</button>
+                        </form>
+                        <p id="error-message" class="text-danger mt-3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../script/signup.js"></script>
+
+</body>
+
+</html>

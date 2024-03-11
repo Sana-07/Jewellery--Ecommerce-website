@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*----------------------------navbar-css-----------------------------------*/
+
+.navbar {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: rgba(19, 72, 56, 0.788) !important;
+}
+
+.nav-link a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.logo:hover {
+    color: rgba(19, 72, 56, 0.788) !important;
+}
+
+.navbar {
+    height: auto;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: fit-content;
+}
+
+/*----------------------------navbar-css-End---------------------------------*/
+
+/*----------------------------Cards-Css--------------------------------*/
+
+.card {
+    margin-bottom: 25px;
+    height: 520px;
+    width: 300px;
+    border: none;
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+    object-position: center;
+}
+
+.card-body {
+    padding: 3px;
+}
+
+.card-body h4 {
+    font-size: 20px;
+    font-family: "poppins";
+    font-weight: bold;
+}
+
+/*----------------------------cards-css-----------------------------------*/
+
+/*------------------scroll-bar-------------------------*/
+
+body {
+    --sb-track-color: #f6fbfd;
+    --sb-thumb-color: #161716;
+    --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 2px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/*------------------responsive-------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+    .card {
+        width: 100%;
+    }
+}
